@@ -27,12 +27,12 @@ This allows you to manage your multi-container applications as systemd services 
 
 ## Installation
 
-To install the tool from the source repository, clone it and use `pip`:
+To install the tool from the source repository, clone it. Then install dependencies using Poetry:
 
 ```bash
 git clone https://github.com/17711-mesh/python.compose-to-podman.git
 cd python.compose-to-podman
-pip install .
+poetry install
 ```
 
 ## Build
@@ -55,15 +55,14 @@ This project uses `setuptools` and can be built from source into a standard Pyth
 The project includes a test suite based on `pytest`.
 
 1.  **Install development dependencies:**
-    The test dependencies are not included in the main package. To run the tests, first install `pytest`:
+    Install development dependencies using Poetry:
     ```bash
-g
-    pip install pytest
+    poetry install --with dev
     ```
 
 2.  **Run the tests:**
     ```bash
-    pytest
+    poetry run pytest
     ```
 
 ## Usage
