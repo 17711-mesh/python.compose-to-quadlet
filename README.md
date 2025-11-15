@@ -1,6 +1,6 @@
 # Compose to Quadlet
 
-> A tool to convert Docker Compose files to Podman Quadlet systemd units.
+> A tool to convert Podman/Docker Compose files to Podman Quadlet systemd units.
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@
 
 ## Synopsis
 
-`compose-to-quadlet` is a Python-based command-line tool that reads a Docker Compose file (`docker-compose.yml`) and generates corresponding `.container`, `.volume`, and `.network` files for use with Podman Quadlet.
+`compose-to-quadlet` is a Python-based command-line tool that reads a Podman Compose/Docker Compose file (`docker-compose.yml`) and generates corresponding `.container`, `.volume`, and `.network` files for use with Podman Quadlet.
 
 This allows you to manage your multi-container applications as systemd services without manually writing unit files.
 
@@ -81,7 +81,7 @@ compose-to-quadlet docker-compose.yml --output-dir my-quadlets --stack-name my-a
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md) for a detailed history of changes.
+See [CHANGELOG](CHANGELOG.md) for a detailed history of changes.
 
 ## License
 
@@ -111,4 +111,4 @@ See [CHANGELOG.md](CHANGELOG.md) for a detailed history of changes.
 
 ## Author Information
 
-This project is maintained by [The 17711 Frame](https://17711.org).
+This project is maintained by 🐌 [The 17711 Frame](https://17711.org).
