@@ -1,0 +1,4 @@
+[Unit]
+Description={{ unit.stack_name }} stack
+Wants={% for s in unit.container_services %}{{ s }} {% endfor %}
+After=network-online.target

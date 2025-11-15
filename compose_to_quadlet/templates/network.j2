@@ -1,0 +1,4 @@
+[Network]
+Driver=bridge
+{% if unit.subnet %}Subnet={{ unit.subnet }}{% endif %}
+{% if unit.gateway %}Gateway={{ unit.gateway }}{% endif %}

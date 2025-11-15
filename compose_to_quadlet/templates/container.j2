@@ -1,0 +1,15 @@
+# Auto-generated container
+[Unit]
+Description={{ unit.service_name }}
+
+[Container]
+Image={{ unit.image }}
+{% if unit.command %}Exec={{ unit.command }}{% endif %}
+
+{% for arg in unit.podman_args %}
+PodmanArgs={{ arg }}
+{% endfor %}
+
+{% for k,v in unit.env.items() %}
+Environment={{ k }}={{ v }}
+{% endfor %}
