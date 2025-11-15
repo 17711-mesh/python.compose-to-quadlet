@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 name = "compose-to-quadlet"
 version = "0.1.0"
 authors = [
-  { name="The 17711 Frame", email="author@example.com" },
+  { name="The 17711 Frame", email="frame@17711.org" },
 ]
 description = "A tool to convert Docker Compose files to Podman Quadlet systemd units."
 readme = "README.md"

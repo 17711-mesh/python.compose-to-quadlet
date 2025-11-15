@@ -112,3 +112,4 @@ See [CHANGELOG](CHANGELOG.md) for a detailed history of changes.
 ## Author Information
 
 This project is maintained by 🐌 [The 17711 Frame](https://17711.org).
+
